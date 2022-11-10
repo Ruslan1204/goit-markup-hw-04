@@ -231,6 +231,7 @@ margin-left: auto;
 
 .contacts-nav .link {
     display: flex;
+    align-items: center;
 
     color: var(--title-text-color);
     font-weight: 500;
@@ -416,6 +417,10 @@ margin-left: auto;
     background-color: var(--section-team-bacground-color);
 }
 
+.our-section{
+    padding-top: 94px;
+}
+
 .images-team{
     display: flex; 
     flex-wrap: wrap;
@@ -452,9 +457,10 @@ margin-left: auto;
 
 .thumb{
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 44px;
     width: 44px;
-    padding: 12px;
     margin-right: 10px;
     border-radius: 50%;
     /* outline: 1px solid tomato; */
@@ -540,25 +546,29 @@ margin-left: auto;
 
 .link-companys{
     display: flex;
-    /* outline: 1px solid tomato; */
     justify-content: center;
-    align-items: center;
+    align-items: center; 
+    fill: var(--link-icon-color);
 
     width: 170px;
     height: 92px;
-    border-radius: 4%;
     border: 1px solid var(--link-icon-color);
-}
-.clients-icon{
-    fill: var(--link-icon-color);
+    border-radius: 4%;
 }
 
-.link-companys:focus .clients-icon,
-.link-companys:hover .clients-icon{
+.link-companys:focus,
+.link-companys:hover{
     fill: var(--accent-color);
+    border- color: var(--accent-color);
+
 }
 
 /*  Подвал */
+
+.social-link{
+    display: flex;
+    align-items: baseline;
+}
 
 .indent:not(:last-child){
 margin-bottom: 9px;
@@ -614,25 +624,10 @@ margin-bottom: 9px;
     font-style: normal;
 }
 
-.social-link{
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start;
-    width: 1200px;
-    height: 252px;
-    flex-wrap: wrap;
-}
-
 .wrapper{
     display: flex;
     width: 231px; 
     margin-right: 70px;
-}
-
-.social-link-icon{
-    display: flex;
-    flex-direction: column;
-    margin-top: 15px;
 }
 
 .link-title{
@@ -653,10 +648,11 @@ margin-bottom: 9px;
 
 .svg-link{
     display: flex;
+    justify-content: center;
+    align-items: center;
 
     height: 44px;
     width: 44px;
-    padding: 12px;
     margin-right: 10px;
     border-radius: 50%;
     background-image:linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
@@ -674,7 +670,6 @@ margin-bottom: 9px;
 
 .svg-link:hover, 
 .svg-link:focus{
-    
     background-color:var(--accent-color);
 }
 
@@ -689,6 +684,10 @@ margin-bottom: 9px;
 /* Основной текст #212121; */
 /* Футер color: rgba(255, 255, 255, 0.6); */
 /* Фон карточки #EEEEEE; */
+
+.portfolio-border{
+    border-bottom: 1px solid #ECECEC;
+}
 
 /* Button */
 
@@ -712,6 +711,9 @@ margin-bottom: 9px;
 {
     color: var(--hero-text-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+    0px 1px 2px rgba(0, 0, 0, 0.08), 
+    0px 2px 2px rgba(0, 0, 0, 0.12);
     
 }
 
@@ -806,13 +808,6 @@ margin-bottom: 9px;
 
     padding-top: 94px;
 }
-.container-title{
-    display: block;
-    width: 370px;
-    padding: 20px;
-    border: 1px solid var(--container-bordder-color);
-    border-top: 0;
-}
 
 .navigation-images{
     display: flex;
@@ -832,6 +827,22 @@ margin-bottom: 9px;
 .container-images:nth-last-child(-n + 3){
     margin-bottom: 0px;
 }
+
+.active:hover .wrap-box{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+    0px 4px 4px rgba(0, 0, 0, 0.06), 
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.container-title{
+    display: block;
+    width: 370px;
+    padding: 20px 24px;
+    border: 1px solid var(--container-bordder-color);
+    border-top: 0;
+}
+
+
 
 
 /*  Title */
